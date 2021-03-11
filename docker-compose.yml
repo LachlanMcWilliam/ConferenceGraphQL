@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  conferencegraphql:
+    image: ${DOCKER_REGISTRY-}conferencegraphql
+    build:
+      context: .
+      dockerfile: ConferenceGraphQL/Dockerfile
